@@ -28,6 +28,9 @@ class Student
     DB[:conn].execute(sql)
   end
 
+  def save
+  end
+
   def update
     sql = "UPDATE students SET name = ?, grade = ? WHERE id = ?"
     DB[:conn].execute(self.name, self.grade, self.id)
